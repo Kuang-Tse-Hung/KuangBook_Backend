@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.108" tests="13" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-11-12T23:23:51" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Articles Endpoints" timestamp="2023-11-12T23:23:51" tests="0" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/articles.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="POST /article" timestamp="2023-11-12T23:23:51" tests="2" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/articles.spec.js" time="0.049" failures="0">
+    <testcase name="Articles Endpoints POST /article should create a new article for the logged-in user" time="0.038" classname="should create a new article for the logged-in user">
+    </testcase>
+    <testcase name="Articles Endpoints POST /article should return 400 if title or content is missing" time="0.004" classname="should return 400 if title or content is missing">
+    </testcase>
+  </testsuite>
+  <testsuite name="GET /articles/:articleId?" timestamp="2023-11-12T23:23:51" tests="4" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/articles.spec.js" time="0.019" failures="0">
+    <testcase name="Articles Endpoints GET /articles/:articleId? should retrieve a specific article by ID" time="0.004" classname="should retrieve a specific article by ID">
+    </testcase>
+    <testcase name="Articles Endpoints GET /articles/:articleId? should retrieve articles by the logged-in user when no ID is provided" time="0.002" classname="should retrieve articles by the logged-in user when no ID is provided">
+    </testcase>
+    <testcase name="Articles Endpoints GET /articles/:articleId? should return 404 if no articles found for the provided ID or username" time="0.003" classname="should return 404 if no articles found for the provided ID or username">
+    </testcase>
+    <testcase name="Articles Endpoints GET /articles/:articleId? should return 500 if an unexpected error occurs" time="0.003" classname="should return 500 if an unexpected error occurs">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Endpoint" timestamp="2023-11-12T23:23:51" tests="3" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/auth.spec.js" time="0.021" failures="0">
+    <testcase name="Auth Endpoint should register a new user" time="0.010" classname="should register a new user">
+    </testcase>
+    <testcase name="Auth Endpoint should login a user" time="0.001" classname="should login a user">
+    </testcase>
+    <testcase name="Auth Endpoint should logout current user" time="0.001" classname="should logout current user">
+    </testcase>
+  </testsuite>
+  <testsuite name="Profile Endpoints" timestamp="2023-11-12T23:23:51" tests="0" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/profile.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="GET /headline/:username?" timestamp="2023-11-12T23:23:51" tests="2" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/profile.spec.js" time="0.008" failures="0">
+    <testcase name="Profile Endpoints GET /headline/:username? should get the headline of the logged-in user when username is not provided" time="0.004" classname="should get the headline of the logged-in user when username is not provided">
+    </testcase>
+    <testcase name="Profile Endpoints GET /headline/:username? should return a 404 if the user does not exist" time="0.003" classname="should return a 404 if the user does not exist">
+    </testcase>
+  </testsuite>
+  <testsuite name="PUT /headline" timestamp="2023-11-12T23:23:51" tests="2" file="/Users/michaek05130505gmail.com/Desktop/bb1/src/profile.spec.js" time="0.007" failures="0">
+    <testcase name="Profile Endpoints PUT /headline should update the headline of the logged-in user" time="0.004" classname="should update the headline of the logged-in user">
+    </testcase>
+    <testcase name="Profile Endpoints PUT /headline should return a 400 if no headline is provided" time="0.002" classname="should return a 400 if no headline is provided">
+    </testcase>
+  </testsuite>
+</testsuites>
